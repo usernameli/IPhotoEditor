@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context="com.li.iphotoeditor.activity.EditActivity">
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawHorizontalTrack="false">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后退" />
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置画笔和颜色" />
+
+            <Button
+                android:id="@+id/addText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加文字" />
+
+            <Button
+                android:id="@+id/huabi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自由画笔" />
+
+
+            <Button
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画直线" />
+
+            <Button
+                android:id="@+id/yuanxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画圆" />
+
+            <Button
+                android:id="@+id/shixinyuanxing"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="画实心圆" />
+
+            <Button
+                android:id="@+id/juxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画矩形" />
+
+            <Button
+                android:id="@+id/shixinjuxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="画实心矩形" />
+            <Button
+                android:id="@+id/chongzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重置" />
+            <Button
+                android:id="@+id/baocun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.li.iphotoeditor.view.MyImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" />
+
+</LinearLayout>

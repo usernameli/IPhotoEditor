@@ -9,6 +9,7 @@ import java.io.File;
  */
 public class FileUtils {
     private static FileUtils fileUtils = new FileUtils();
+    private String fileName;
     private String fileDir = Environment
             .getExternalStorageDirectory() + "/IPhotoEditor";
 
@@ -21,7 +22,16 @@ public class FileUtils {
         if (!destDir.exists()) {
             destDir.mkdirs();
         }
+        setFileName(fileName);
         return new File(fileDir, fileName);
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getFileName() {
+        return fileName;
     }
 
 }
